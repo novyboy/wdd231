@@ -47,6 +47,7 @@ function createDirectoryCard(
 	const img = document.createElement("img");
 	img.classList.add("profile");
 	img.src = imageSrc;
+	img.alt = name;
 	
 	const information = document.createElement("div");
 	information.classList.add("flex-column");
