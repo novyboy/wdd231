@@ -1,0 +1,140 @@
+* {
+	/*RESET*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*Font*/
+	font-family: var(--font-family);
+	font-weight: 500;
+}
+
+.grid {
+	display: grid;
+	gap: 1rem;
+}
+
+.flex-adapt {
+	display: flex;
+	gap: 1rem;
+}
+
+:root {
+	--primary-color: #37BDD7;
+	--secondary-color: #003453;
+	
+	--background-color: #d7e9f3;
+	--text-color: #0d0b1e;
+	--font-family: "Stack Sans Headline", Helvetica;
+}
+
+a {
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+
+input[type="radio"] {
+	appearance: none;
+	position: absolute;
+}
+
+label {
+	display: block;
+	cursor: pointer;
+	padding: 1rem;
+	border-radius: 1rem;
+	transition: 300ms background ease-in-out;
+	background: var(--background-color);
+}
+
+label:hover, input[type="radio"]:checked + label {
+	background: var(--primary-color);
+}
+
+strong {
+	font-weight: 900;
+}
+
+header {
+	position: sticky;
+	top: -4.5rem;
+	justify-content: space-between;
+	background: var(--background-color);
+	padding: 0 1rem;
+}
+#icon {
+	width: 2rem;
+}
+header > nav > a {
+	text-align: center;
+	flex: auto;
+	transition: background 0.15s ease-in-out;
+	padding: 1rem;
+}
+header > nav > a:hover, header > nav > a[href="#"] {
+	background: var(--primary-color);
+}
+
+body {
+	min-height: 100vh;
+}
+main {
+	padding: 1rem;
+	align-self: center;
+	max-width: 80rem;
+}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+}
+.card {
+	display: flex;
+	flex-flow: column;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.card > div:last-child {
+	padding: 1rem;
+	background: var(--background-color);
+	height: 100%;
+	width: 100%;
+	font-size: 0.75rem;
+    overflow-wrap: break-word;
+	word-break: break-all;
+}
+.card > div:first-child {
+	padding: 1rem;
+	background: var(--primary-color);
+}
+.card > div:first-child > h2 {
+	font-weight: bold;
+}
+
+.profile {
+	border-radius: 1rem;
+	width: 5rem;
+	height: 5rem;
+	object-fit: cover;
+}
+
+.flex-column {
+	display: flex;
+	flex-flow: column;
+	gap: 1rem;
+}
+.flex-row {
+	display: flex;
+	flex-flow: row;
+	gap: 1rem;
+}
+.center {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+footer {
+	background: var(--primary-color);
+	justify-content: space-between;
+	padding: 1rem;
+	margin-top: auto;
+}
