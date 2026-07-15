@@ -1,0 +1,79 @@
+[
+  {
+	"name": "Blue Horizon Café",
+	"address": "128 Seaside Ave, Monterey, CA 93940",
+	"phone": "(831) 555-2198",
+	"email": "info@bluehorizoncafe.com",
+	"website": "https://bluehorizoncafe.com",
+	"image": "images/blue-horizon-cafe.webp",
+	"membershipLevel": 1,
+	"industry": "Food & Beverage",
+	"tagline": "Ocean‑view brunch & artisan coffee"
+  },
+  {
+	"name": "TechNova Solutions",
+	"address": "450 Market Street, Suite 900, San Francisco, CA 94103",
+	"phone": "(415) 555-8821",
+	"email": "contact@technovasolutions.com",
+	"website": "https://technovasolutions.com",
+	"image": "images/technova-solutions.webp",
+	"membershipLevel": 3,
+	"industry": "Software Development",
+	"tagline": "Cloud integration made simple"
+  },
+  {
+	"name": "GreenLeaf Landscaping",
+	"address": "77 Willow Creek Rd, Bend, OR 97701",
+	"phone": "(541) 555-3344",
+	"email": "hello@greenleaflandscaping.net",
+	"website": "https://greenleaflandscaping.net",
+	"image": "images/greenleaf-landscaping.webp",
+	"membershipLevel": 2,
+	"industry": "Landscaping & Outdoor Services",
+	"tagline": "Eco‑friendly outdoor design"
+  },
+  {
+	"name": "Crystal Optics",
+	"address": "2100 Vision Plaza, Denver, CO 80202",
+	"phone": "(303) 555-9012",
+	"email": "support@crystaloptics.com",
+	"website": "https://crystaloptics.com",
+	"image": "images/crystal-optics.webp",
+	"membershipLevel": 1,
+	"industry": "Retail / Eyewear",
+	"tagline": "Premium eyewear for every style"
+  },
+  {
+	"name": "Summit Fitness Club",
+	"address": "980 Ridgeview Dr, Salt Lake City, UT 84101",
+	"phone": "(801) 555-4477",
+	"email": "team@summitfitnessclub.com",
+	"website": "https://summitfitnessclub.com",
+	"image": "images/summit-fitness-club.webp",
+	"membershipLevel": 3,
+	"industry": "Health & Fitness",
+	"tagline": "Train stronger, live better"
+  },
+  {
+	"name": "Urban Thread Boutique",
+	"address": "55 Maple Street, Portland, ME 04101",
+	"phone": "(207) 555-7782",
+	"email": "shop@urbanthreadboutique.com",
+	"website": "https://urbanthreadboutique.com",
+	"image": "images/urban-thread-boutique.webp",
+	"membershipLevel": 2,
+	"industry": "Fashion & Apparel",
+	"tagline": "Independent fashion for modern living"
+  },
+  {
+	"name": "Skyline Digital Media",
+	"address": "600 Harbor Blvd, Suite 300, Jersey City, NJ 07310",
+	"phone": "(201) 555-9920",
+	"email": "studio@skylinedigitalmedia.com",
+	"website": "https://skylinedigitalmedia.com",
+	"image": "images/skyline-digital-media.webp",
+	"membershipLevel": 1,
+	"industry": "Marketing & Media",
+	"tagline": "Creative media that elevates brands"
+  }
+]

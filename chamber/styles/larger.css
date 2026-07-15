@@ -1,0 +1,11 @@
+@media (min-width: 48rem) {
+	#hamburger {
+		display: none;
+	}
+	.grid {
+		grid-template-columns: auto auto auto;
+	}
+	.flex-adapt {
+		flex-flow: row;
+	}
+}
