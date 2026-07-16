@@ -2,7 +2,6 @@ const directory = document.getElementById("directory");
 
 async function loadMembers() {
 	const response = await fetch("./data/members.json");
-	console.log(response);
 	const members = await response.json();
 
 	members.forEach(member => createDirectoryCard(
@@ -51,6 +50,7 @@ function createDirectoryCard(
 	
 	const information = document.createElement("div");
 	information.classList.add("flex-column");
+	information.classList.add("break");
 	
 	const emailSpan = document.createElement("span");
 	emailSpan.innerHTML = `<strong>EMAIL:</strong> ${email}`;

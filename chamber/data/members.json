@@ -6,7 +6,7 @@
 	"email": "info@bluehorizoncafe.com",
 	"website": "https://bluehorizoncafe.com",
 	"image": "images/blue-horizon-cafe.webp",
-	"membershipLevel": 1,
+	"level": 1,
 	"industry": "Food & Beverage",
 	"tagline": "Ocean‑view brunch & artisan coffee"
   },
@@ -17,7 +17,7 @@
 	"email": "contact@technovasolutions.com",
 	"website": "https://technovasolutions.com",
 	"image": "images/technova-solutions.webp",
-	"membershipLevel": 3,
+	"level": 3,
 	"industry": "Software Development",
 	"tagline": "Cloud integration made simple"
   },
@@ -28,7 +28,7 @@
 	"email": "hello@greenleaflandscaping.net",
 	"website": "https://greenleaflandscaping.net",
 	"image": "images/greenleaf-landscaping.webp",
-	"membershipLevel": 2,
+	"level": 2,
 	"industry": "Landscaping & Outdoor Services",
 	"tagline": "Eco‑friendly outdoor design"
   },
@@ -39,7 +39,7 @@
 	"email": "support@crystaloptics.com",
 	"website": "https://crystaloptics.com",
 	"image": "images/crystal-optics.webp",
-	"membershipLevel": 1,
+	"level": 1,
 	"industry": "Retail / Eyewear",
 	"tagline": "Premium eyewear for every style"
   },
@@ -50,7 +50,7 @@
 	"email": "team@summitfitnessclub.com",
 	"website": "https://summitfitnessclub.com",
 	"image": "images/summit-fitness-club.webp",
-	"membershipLevel": 3,
+	"level": 3,
 	"industry": "Health & Fitness",
 	"tagline": "Train stronger, live better"
   },
@@ -61,7 +61,7 @@
 	"email": "shop@urbanthreadboutique.com",
 	"website": "https://urbanthreadboutique.com",
 	"image": "images/urban-thread-boutique.webp",
-	"membershipLevel": 2,
+	"level": 2,
 	"industry": "Fashion & Apparel",
 	"tagline": "Independent fashion for modern living"
   },
@@ -72,7 +72,7 @@
 	"email": "studio@skylinedigitalmedia.com",
 	"website": "https://skylinedigitalmedia.com",
 	"image": "images/skyline-digital-media.webp",
-	"membershipLevel": 1,
+	"level": 1,
 	"industry": "Marketing & Media",
 	"tagline": "Creative media that elevates brands"
   }

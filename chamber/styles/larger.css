@@ -2,8 +2,11 @@
 	#hamburger {
 		display: none;
 	}
-	.grid {
+	.grid-3 {
 		grid-template-columns: auto auto auto;
+	}
+	.grid-2 {
+		grid-template-columns: auto auto;
 	}
 	.flex-adapt {
 		flex-flow: row;

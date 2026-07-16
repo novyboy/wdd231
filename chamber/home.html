@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<base target="_top">
+	<title>Home - Honolulu Chamber of Commerce</title>
+	<meta name="description" content="A directory listing for all employees of the Honolulu Chamber of Commerce.">
+	<meta name="author" content="Nova Sonomura">
+	
+	<meta property="og:title" content="Home - Honolulu Chamber of Commerce">
+	<meta property="og:description" content="A directory listing for all employees of the Chamber of Commerce.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://novyboy.github.io/wdd231/chamber/images/favicon-512.webp">
+	<meta property="og:url" content="https://novyboy.github.io/wdd231/chamber/directory.html">
+	<meta property="og:site_name" content="Chamber of Commerce">
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image:alt" content="Home - Honolulu Chamber of Commerce">
+	
+	<link rel="icon" href="images/favicon.ico" type="image/ico" sizes="32x32">
+	
+	<link rel="apple-touch-icon" href="images/favicon-180.webp" sizes="180x180">
+	<link rel="shortcut icon" href="images/favicon-192.webp" sizes="192x192">
+	<link rel="apple-touch-icon" href="images/favicon-512.webp" sizes="512x512">
+	
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/small.css">
+	<link rel="stylesheet" href="styles/larger.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="">
+	<meta name="theme-color" content="">
+	
+	<script src="scripts/getdates.js" defer></script>
+	<script src="scripts/hamburger.js" defer></script>
+	<script src="scripts/home.js" defer></script>
+</head>
+<body class="flex-column">
+	<header class="flex-row">
+		<span class="flex-row center">
+			<img id="icon" alt="favicon" src="images/favicon-192.webp">
+			Honolulu Chamber of Commerce
+		</span>
+		<nav id="main-menu" class="flex-adapt">
+			<a href="#">Home</a>
+			<a href="directory.html">Directory</a>
+			<a href="join.html">Join</a>
+			<a href="discover.html">Discover</a>
+		</nav>
+		<button id="hamburger" aria-label="hamburger menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</header>
+	<main class="flex-column">
+		<h1>Home</h1>
+		<section class="main">
+			<img class="hero" alt="Honolulu Chamber of Commerce" src="images/hero-image.webp"/>
+			<div class="cta">
+				<h2>
+					Join the Honolulu Chamber of Commerce
+				</h2>
+				<a href="join.html">Join Now</a>
+			</div>
+		</section>
+		<!--Hero Image-->
+		<!--Call to Action-->
+		<!--Current Events-->
+		<!--Weather-->
+		<!--2-3 Company Spotlights-->
+		<div class="flex-adapt">
+			<section id="current-events" class="card">
+				<div>
+					<h2>Current Events</h2>
+				</div>
+				<div class="flex-column">
+					<h3>Honolulu Small Business Growth Summit Opens at Ala Moana Hotel</h3>
+					<span>Date: July 12, 2026</span>
+					<p>
+						The Chamber launched its annual Small Business Growth Summit, bringing together more than 300 local entrepreneurs for workshops on digital marketing, tourism trends, and AI‑powered business tools.
+					</p>
+					<p>
+						Key highlight: A panel on “Sustainable Tourism for 2027” featuring local restaurateurs and eco‑tour operators.
+					</p>
+					<a href="#">Learn more: Small Business Summit</a>
+					
+					<hr>
+					
+					<h3>Waikiki Retail Revitalization Program Announces 22 New Storefront Grants</h3>
+					<span>Date: July 8, 2026</span>
+					<p>
+						The Chamber partnered with the City & County of Honolulu to award grants to small retailers opening or renovating storefronts in Waikiki.
+					</p>
+					<p>
+						The program focuses on locally owned shops, cultural artisans, and food vendors.
+					</p>
+					<a href="#">Learn more: Retail Revitalization Program</a>
+					
+					<hr>
+					
+					<h3>Chamber Launches “Hire Hawaiʻi” Workforce Initiative</h3>
+					<span>Date: July 3, 2026</span>
+					<p>
+						A new workforce development program connects local employers with job seekers through training, resume workshops, and monthly hiring fairs.
+					</p>
+					<p>
+						The initiative emphasizes hospitality, healthcare, and tech roles.
+					</p>
+					<a href="#">
+						Learn more: Hire Hawaiʻi Initiative</a>
+				</div>
+			</section>
+			<section id="weather" class="card">
+				<div>
+					<h2>Weather</h2>
+				</div>
+				<div class="flex-column">
+					<h3>Today</h3>
+					<dl class="grid-2 forecast">
+						<div>
+							<dt>Current Temperature:</dt>
+							<dd id="temperature"></dd>
+						</div>
+						<div>
+							<dt>Current Conditions:</dt>
+							<dd id="conditions"></dd>
+						</div>
+					</dl>
+					<h3>3-Day Forecast</h3>
+					<dl class="grid-3 forecast">
+						<div>
+							<dt>High:</dt>
+							<dd id="high-1"></dd>
+						</div>
+						<div>
+							<dt>Low:</dt>
+							<dd id="low-1"></dd>
+						</div>
+						<div>
+							<dt>Conditions:</dt>
+							<dd id="conditions-1"></dd>
+						</div>
+					</dl>
+					<dl class="grid-3 forecast">
+						<div>
+							<dt>High:</dt>
+							<dd id="high-2"></dd>
+						</div>
+						<div>
+							<dt>Low:</dt>
+							<dd id="low-2"></dd>
+						</div>
+						<div>
+							<dt>Conditions:</dt>
+							<dd id="conditions-2"></dd>
+						</div>
+					</dl>
+					<dl class="grid-3 forecast">
+						<div>
+							<dt>High:</dt>
+							<dd id="high-3"></dd>
+						</div>
+						<div>
+							<dt>Low:</dt>
+							<dd id="low-3"></dd>
+						</div>
+						<div>
+							<dt>Conditions:</dt>
+							<dd id="conditions-3"></dd>
+						</div>
+					</dl>
+				</div>
+			</section>
+		</div>
+		<section class="flex-column">
+			<h2>Company Spotlights</h2>
+			<div id="spotlight" class="flex-adapt">
+				
+			</div>
+		</section>
+	</main>
+	<footer class="flex-adapt">
+		<div class="flex-column">
+			<strong>Honolulu Chamber of Commerce</strong>
+			<span>1518 Auld Lane</span>
+			<span>Honolulu, Hawaii 96817</span>
+			<span>info@honolulucc.org</span>
+			<span>+1 (808) 420-7266</span>
+		</div>
+		<div class="flex-row social">
+			<a href="#"><img alt="youtube" src="images/youtube.svg"></a>
+			<a href="#"><img alt="twitter" src="images/twitter.svg"></a>
+			<a href="#"><img alt="linkedin" src="images/linkedin.svg"></a>
+		</div>
+		<div class="flex-column">
+			<span>WDD231 Class Project</span>
+			<span>Nova Sonomura</span>
+			<span>
+				©︎<span id="currentYear"></span>
+				Honolulu Chamber of Commerce
+			</span>
+			<span>
+				Last Modification: <span id="lastModified"></span>
+			</span>
+		</div>
+	</footer>
+</body>
+
+</html>

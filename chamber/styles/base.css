@@ -8,7 +8,7 @@
 	font-weight: 500;
 }
 
-.grid {
+.grid-3 {
 	display: grid;
 	gap: 1rem;
 }
@@ -98,9 +98,6 @@ h1 {
 	background: var(--background-color);
 	height: 100%;
 	width: 100%;
-	font-size: 0.75rem;
-    overflow-wrap: break-word;
-	word-break: break-all;
 }
 .card > div:first-child {
 	padding: 1rem;
@@ -132,9 +129,62 @@ h1 {
 	align-items: center;
 	text-align: center;
 }
+.space-between {
+	justify-content: space-between;
+}
+.break {
+	overflow-wrap: break-word;
+	word-break: break-all;
+	font-size: 0.75rem;
+}
 footer {
 	background: var(--primary-color);
 	justify-content: space-between;
 	padding: 1rem;
 	margin-top: auto;
+}
+
+
+/*Home Page Specific*/
+.hero {
+	object-fit: cover;
+	width: 100%;
+	border-radius: 1rem;
+}
+.cta {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	background: var(--primary-color);
+	color: white;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+.main {
+	position: relative;
+}
+#current-events {
+	flex: 1 1 0;
+	flex-basis: 70%
+}
+#weather {
+	flex: 1 1 0;
+	flex-basis: 30%;
+}
+.gold {
+	height: fit-content;
+	background: gold;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+.silver {
+	height: fit-content;
+	background: white;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+.forecast {
+	background: var(--primary-color);
+	padding: 1rem;
+	border-radius: 1rem;
 }
