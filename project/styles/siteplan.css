@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Caveat", "Mali", cursive;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-size-adjust: 0.4;
+}
+
+:root {
+	--primary-color: #add8e5;
+	--background-color: #e0ffff;
+	--site-text-color: #3A3A3A;
+	--site-accent-color: #B8F2D0;
+	--site-background-color: #F3E8FF;
+	--site-primary-color: #A7D8FF;
+	--site-secondary-color: #FFC9A9;
+}
+
+header {
+	position: sticky;
+	top: 0rem;
+	display: flex;
+	flex-flow: row;
+	background: var(--primary-color);
+	justify-content: center;
+	z-index: 10;
+}
+body {
+	min-height: 100vh;
+}
+main {
+	padding: 1rem;
+	align-self: center;
+	max-width: 60rem;
+}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+}
+.flex-column {
+	display: flex;
+	flex-flow: column;
+	gap: 1rem;
+}
+.flex-row {
+	display: flex;
+	flex-flow: row;
+	gap: 1rem;
+}
+.wireframe {
+	padding: 1rem;
+	border: 1px solid black;
+	border-radius: 1rem;
+	flex: auto;
+	text-align: center;
+}
+
+.swatch::after {
+	content: " ";
+	display: block;
+	height: 5rem;
+	width: 5rem;
+	border-radius: 1rem;
+}
+.colorSchema > div {
+	flex: 1 1 0;
+	align-self: end;
+}
+.primaryColor::after {
+	background-color: var(--site-primary-color);
+}
+
+.secondaryColor::after {
+	background-color: var(--site-secondary-color);
+}
+
+.accentColor::after {
+	background-color: var(--site-accent-color);
+}
+.textColor::after {
+	background-color: var(--site-text-color);
+}
+
+.backgroundColor::after {
+	background-color: var(--site-background-color);
+}
+
+.serif {
+	font-family: "Noto Serif";
+}
+.sans {
+	font-family: "Noto Sans";
+}
+
+section {
+	padding: 1rem;
+	border-radius: 1rem;
+	background: var(--background-color);
+}
+li {
+	margin-left: 1rem;
+}
+
+footer {
+	background: var(--primary-color);
+	padding: 1rem;
+	text-align: center;
+	margin-top: auto;
+}
