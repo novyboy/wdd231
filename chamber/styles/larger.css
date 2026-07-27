@@ -11,4 +11,9 @@
 	.flex-adapt {
 		flex-flow: row;
 	}
+	.cta {
+		position: absolute;
+		bottom: 1rem;
+		right: 1rem;
+	}
 }

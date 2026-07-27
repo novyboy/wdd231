@@ -60,6 +60,7 @@ header {
 	justify-content: space-between;
 	background: var(--background-color);
 	padding: 0 1rem;
+	z-index: 10;
 }
 #icon {
 	width: 2rem;
@@ -152,9 +153,6 @@ footer {
 	border-radius: 1rem;
 }
 .cta {
-	position: absolute;
-	bottom: 1rem;
-	right: 1rem;
 	background: var(--primary-color);
 	color: white;
 	padding: 1rem;
