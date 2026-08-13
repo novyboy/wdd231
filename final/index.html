@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<base target="_top">
+	<title>Home | Nova's Art</title>
+	<meta property="og:title" content="Home | Nova's Art">
+	<meta name="description" content="Home to Nova's Art, Novels, and more">
+	<meta name="author" content="Nova Sonomura">
+	<meta property="og:description" content="Home to Nova's Art, Novels, and more">
+	<meta property="og:type" content="website">
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image:alt" content="Siteplan">
+	
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/larger.css">
+	<link rel="stylesheet" href="styles/small.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	
+	<link rel="icon" href="images/favicon.ico" type="image/ico" sizes="32x32">
+	
+	<link rel="apple-touch-icon" href="images/favicon-180.webp" sizes="180x180">
+	<link rel="shortcut icon" href="images/favicon-192.webp" sizes="192x192">
+	<link rel="apple-touch-icon" href="images/favicon-512.webp" sizes="512x512">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="">
+	<meta name="theme-color" content="">
+	<script src="scripts/getdates.js" defer></script>
+	<script src="scripts/hamburger.js" defer></script>
+	<script src="scripts/novels.js" defer></script>
+	<script src="scripts/art.js" type="module" defer></script>
+</head>
+<body class="flex-column">
+	<header class="flex-row">
+		<span class="flex-row center">
+			<img id="icon" alt="favicon" src="images/favicon-192.webp">
+			Nova's Art
+		</span>
+		<nav id="main-menu" class="flex-adapt">
+			<a href="#">Home</a>
+			<a href="art.html">Art</a>
+			<a href="novels.html">Novels</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+		<button id="hamburger" aria-label="hamburger menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</header>
+	<dialog id="viewer">
+	  <div class="viewer-content">
+		<img id="viewer-img" src="">
+		<h2 id="viewer-title"></h2>
+		<p id="viewer-description"></p>
+		<small id="viewer-date"></small>
+	  </div>
+	</dialog>
+	<main class="flex-column">
+		<h1>Home</h1>
+		<section class="main">
+			<img loading="lazy" class="hero" alt="Honolulu Chamber of Commerce" src="images/hero-image.webp"/>
+			<div class="cta">
+				<h2>
+					Commissions Open
+				</h2>
+				<a href="contact.html">Contact Now</a>
+			</div>
+		</section>
+		<section class="card">
+			<div>
+				<h2>Art</h2>
+			</div>
+			<div>
+				<nav id="gallery" class="carousel flex-row">
+				</nav>
+			</div>
+		</section>
+		<section class="card">
+			<div>
+				<h2>Novels</h2>
+			</div>
+			<div>
+				<nav id="novels" class=" carousel flex-row">
+				</nav>
+			</div>
+		</section>
+	</main>
+	<footer class="flex-adapt">
+		<div class="flex-column">
+			<strong>Nova's Art</strong>
+			<span>1518 Auld Lane</span>
+			<span>Honolulu, Hawaii 96817</span>
+			<span>novakaiisland+art@gmail.com</span>
+			<span>+1 (808) 319-6155</span>
+		</div>
+		<div class="flex-row social">
+			<a href="#"><img alt="youtube" src="images/youtube.svg"></a>
+			<a href="#"><img alt="twitter" src="images/twitter.svg"></a>
+			<a href="#"><img alt="linkedin" src="images/linkedin.svg"></a>
+		</div>
+		<div class="flex-column">
+			<span>WDD231 Final Project</span>
+			<span>Nova Sonomura</span>
+			<span>
+				©︎<span id="currentYear"></span>
+				Nova's Art
+			</span>
+			<span>
+				Last Modification: <span id="lastModified"></span>
+			</span>
+		</div>
+	</footer>
+</body>
+
+</html>
