@@ -1,21 +1,52 @@
-const novels = [
-	{
-		name: "Miss Perception",
-		link: "miss-perception.html"
-	},
-	{
-		name: "Creatures of a Liminal Space",
-		link: "creatures-of-a-liminal-space.html"
-	},
-	{
-		name: "Stuck in the Rain",
-		link: "stuck-in-the-rain.html"
-	},
-	{
-		name: "Strangers on the Next Flight Over",
-		link: "strangers-on-the-next-flight-over.html"
+async function loadNovels() {
+	try {
+		const response = await fetch("./data/novels.json");
+	
+		if (!response.ok) {
+			throw new Error("Failed to fetch novels.json");
+		}
+	
+		novels = await response.json();
+	} catch (err) {
+		console.error("Using fallback novels:", err);
+	
+		// Default fallback JSON
+		novels = [
+			{
+				name: "Miss Perception",
+				link: "miss-perception.html"
+			},
+			{
+				name: "Creatures of a Liminal Space",
+				link: "creatures-of-a-liminal-space.html"
+			},
+			{
+				name: "Stuck in the Rain",
+				link: "stuck-in-the-rain.html"
+			},
+			{
+				name: "Strangers on the Next Flight Over",
+				link: "strangers-on-the-next-flight-over.html"
+			}
+		];
 	}
-];
+
+	const novelsNav = document.getElementById("novels");
+	
+	for (const {name, link} of novels) {
+		const novelElement = document.createElement("a");
+		novelElement.classList.add("novel");
+		novelElement.innerText = name;
+		novelElement.id = name;
+		novelElement.href = `novels/${link}`;
+		novelElement.addEventListener("click", () => updateSeen(name));
+		novelsNav.appendChild(novelElement);
+	}
+	
+	setSeenClasses();
+};
+
+loadNovels();
 
 function setSeenClasses() {
 	const seen = JSON.parse(localStorage.getItem("seen")) || [];
@@ -33,18 +64,3 @@ function updateSeen(name) {
 	}
 	setSeenClasses();
 }
-
-const novelsNav = document.getElementById("novels");
-
-
-for (const {name, link} of novels) {
-	const novelElement = document.createElement("a");
-	novelElement.classList.add("novel");
-	novelElement.innerText = name;
-	novelElement.id = name;
-	novelElement.href = `novels/${link}`;
-	novelElement.addEventListener("click", () => updateSeen(name));
-	novelsNav.appendChild(novelElement);
-}
-
-setSeenClasses();
